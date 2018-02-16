@@ -16,21 +16,20 @@ def main ():
         df = pd.read_csv(fl, index_col=None, header=0)
         arr.append(df)
     df = pd.concat(arr)
-    print len(df)
 
     df = cleanData(df)
     df = removeOutliers(df)
+    df.to_csv('outputFiles/cleanedData.csv', encoding='utf-8')
 
-    # Select an specific group, like a country or time range
+    # Select an specific group, e.g. country and time range
     # df = df.loc[df['country'] == 'Spain']
     # df = df[df.deadline < '15-11-2017']
     # df = df[df.deadline > '15-11-2015']
 
-    df.to_csv('cleanedData.csv', encoding='utf-8')
-
-    countrySuccMean = df.groupby(['countryName'])['success'].agg(['mean', 'count'])
-    countrySuccMean = countrySuccMean[countrySuccMean['count'] >= 10]
-    countrySuccMean.to_csv('cartoData.csv', header='true', encoding='utf-8')
+    # Save only specific data, e.g. uploading to Carto
+    # countrySuccMean = df.groupby(['countryName'])['success'].agg(['mean', 'count'])
+    # countrySuccMean = countrySuccMean[countrySuccMean['count'] >= 10]
+    # countrySuccMean.to_csv('outputFiles/cartoData.csv', header='true', encoding='utf-8')
 
     # Plots
     # categoryArray = ['technology', 'theater', 'games', 'film%20&%20video', 'publishing', 'music', 'art', 'photography']
