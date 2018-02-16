@@ -31,7 +31,7 @@ The [results slides](slides/Final%20Results.pdf) include visual representation o
 ### To Dos
 
 * Include a sentiment analysis of the description of the campaigns. I thought about using [this](https://github.com/clemtoy/WNAffect) code.
-* Build a Neural Network to predict if a campaign will be successful – I am currently completing on this.
+* Build a Neural Network to predict if a campaign will be successful – I am currently completing this task.
 
 Any cool idea? Open an issue and we will discuss it.
 
