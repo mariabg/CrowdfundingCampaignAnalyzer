@@ -26,7 +26,7 @@ Projects data was obtained from [here](https://webrobots.io/kickstarter-datasets
 
 ### Results
 
-The [results slides](slides/Final Results.pdf) include visual representation of the data with [Plotly](https://plot.ly), [Carto](carto.com) and [Graphext](graphext.com), along with the most interesting results.
+The [results slides](slides/Final%20Results.pdf) include visual representation of the data with [Plotly](https://plot.ly), [Carto](carto.com) and [Graphext](graphext.com), along with the most interesting results.
 
 ### To Dos
 
