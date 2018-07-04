@@ -27,11 +27,12 @@ Projects data was obtained from [here](https://webrobots.io/kickstarter-datasets
 ### Results
 
 The [results slides](slides/Final%20Results.pdf) include visual representation of the data with [Plotly](https://plot.ly), [Carto](carto.com) and [Graphext](graphext.com), along with the most interesting results.
+Also, I publish on my Twitter account [some insights](https://twitter.com/_mariabg/status/968058086010294272) of this project (Spanish).
 
 ### To Dos
 
 * Include a sentiment analysis of the description of the campaigns. I thought about using [this](https://github.com/clemtoy/WNAffect) code.
-* Build a Neural Network to predict if a campaign will be successful – I am currently completing this task.
+* Build a Neural Network to predict if a campaign will be successful.
 
 Any cool idea? Open an issue and we will discuss it.
 
